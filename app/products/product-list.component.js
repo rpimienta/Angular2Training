@@ -43,9 +43,13 @@ var ProductListComponent = (function () {
         this.showImage = !this.showImage;
     };
     ;
+    ProductListComponent.prototype.ngOnInit = function () {
+        console.log('In OnInit');
+    };
     ProductListComponent = __decorate([
         core_1.Component({
             selector: 'pm-products',
+            moduleId: module.id,
             templateUrl: 'app/products/product-list.component.html',
             styleUrls: ['app/products/product-list.component.css']
         }), 
